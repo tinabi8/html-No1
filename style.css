@@ -1,0 +1,236 @@
+*{
+    padding:0;
+    margin:0;
+}
+header {
+    background-color: rgba(35,28,26,0.6);
+    height:100px;
+    width:100%;
+    position:fixed;  
+}
+
+ h1 {
+    color:white
+
+   
+}
+header ul {
+    position:absolute;
+    right:5vw;
+    top:0;
+    line-height:100px;  
+}
+
+h1{
+    position:absolute;
+    left:120px;
+    top:0;
+    line-height:100px;
+    background-image:url(images/62f10b3e4177a24963a5e039.png);
+    background-repeat:no-repeat;  
+    background-position:center;
+    width:500px;
+    height:100px;
+    text-indent:-9999px;
+
+}
+
+header li{
+    display:inline;
+    margin-right:4vw;
+}
+header a{
+    color:white;
+    text-decoration:none;
+}
+header a:hover {
+    text-decoration:underline;
+}
+
+.news {
+    background-color: rgb(23, 212, 212);
+    color:white;
+    height:95vh;
+    background-image:url("images/luftaufnahme.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+} 
+
+.news h2 {
+    font-size:80px;
+    margin-top:60px;
+    }
+.news p {
+    color:#FEF7E6;
+    font-size: 38px;
+    margin:25px 0;
+}
+.news a {
+    color:white;
+    text-decoration:none;
+    font-size: 18px;
+    border:1px solid #ACACAC;
+    padding:10px 20px;
+    border-radius:5px;
+}
+
+.slogan {
+    background-color:#485652;
+    color:white;
+    height:250px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 30px;
+    line-height: 1.8em;
+}
+
+footer {
+    background-color:#000000;
+    color:rgb(176, 176, 176);
+    height:60px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 14px;
+    
+}
+.shop {
+    display:flex
+}
+.shop img {
+    width:50%;
+    height: auto;
+}
+.info {
+    width:50%;
+    background-color:white;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+.info h2{
+    font-size:60px;
+    margin-bottom:30px;
+}
+.info p {
+    text-align:center;
+    line-height:2em;
+}
+
+.product {
+    display:flex;
+    background-color:#e1dfda;
+    justify-content:space-between;
+    align-items:center;
+    padding:100px 180px 80px;
+}
+
+.product div {
+    width:300px;
+    text-align:center;
+}
+.product img {
+    width:100%;
+    border-radius:10px;
+}
+.product h3{
+    font-size:20px;
+    margen:20px 10px;
+}
+.produckt p {
+    font-size:10px;
+    line-height:1.6em;
+}
+
+.newsletter {
+    background-color: #485652;
+    color:white;
+    padding:60px 0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.newsletter p{
+    margin-bottom: 20px;
+
+}
+
+.newsletter input,.newsletter button {
+    background-color: transparent;
+    color:white;
+    border:1px soild #949d9a;
+    padding:10px;
+    border-radius:5px;
+    
+}
+.newsletter input{
+    width:200px;
+    margin-right: 15px;
+
+}
+input:placeholder{
+    color:#dddddd;
+}
+input:focus{
+    outline:none;
+    border-color:#E0E9A3;
+}
+
+.menu {
+    display:none;
+}
+/* responsive layout */
+@media screen and (max-width: 768px) {
+
+
+    header ul {
+        display:none;
+
+    }
+    header h1{
+        left:50%;
+        transform:translateX(-50%)
+    }
+    .news h2{
+        font-size:40px;
+    }
+    .menu {
+        display: block;
+        background-color:transparent;
+        font-size: 35px;
+        position:absolute;
+        top:15px;
+        left:20px;
+        border:none;
+        cursor:pointer;
+
+    }
+    .shop {
+        flex-direction: column;
+    }
+    .shop img{
+        width:100%;
+        
+    }
+    .info {
+        width:100%;
+        padding:40px 0;
+    }
+    .info h2 {
+        font-size:30px;
+    }
+    .product {
+        flex-direction: column;
+        padding: 60px 0;
+    }
+    .product div {
+        margin-bottom: 30px;
+    }
